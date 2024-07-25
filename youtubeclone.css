@@ -65,13 +65,6 @@
   row-gap: 40px;
 }
 
-@media (max-width: 600px) {
-  .video-grid{
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  
-}
 
 /* Add this to your youtubeclone.css file */
 .video-title a,
