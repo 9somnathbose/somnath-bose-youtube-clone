@@ -1,0 +1,138 @@
+.thumbnail {
+  width: 100%;
+}
+
+.video-info {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.channel-logo {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: relative;
+}
+
+.c-logo {
+  width: 36px;
+  border-radius: 50px;
+}
+
+.video-title {
+  margin-top: 0px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.thumbnail-row {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.video-time {
+  position: absolute;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 2px;
+  right: 5px;
+  bottom: 10px;
+  font-weight: 500;
+}
+
+.video-author,
+.video-stats {
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+}
+
+.video-author {
+  margin-bottom: 5px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 40px;
+}
+
+@media (max-width: 600px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  
+}
+
+/* Add this to your youtubeclone.css file */
+.video-title a,
+.video-author a,
+.video-stats a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit the color from the parent element */
+}
+
+/* Add a hover effect if desired */
+.video-title a:hover {
+  text-decoration: none; /* Optional: add underline on hover */
+}
+
+.toolkit {
+  height: 60px;
+  width: 200px;
+  border: none;
+  border-radius: 3px;
+  z-index: 2;
+  background-color: white;
+  box-shadow: 2px 2px 9px rgba(156, 156, 156, 0.4);
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: -20px;
+  align-items: center;
+  justify-content: space-evenly;
+  opacity: 0;
+  transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+.channel-logo:hover .toolkit {
+  opacity: 1;
+}
+
+.toolkit img {
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.toolkit-channel-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 5px;
+  align-items: start;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.toolkit-channel-name {
+  font-family: roboto;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.toolkit-channel-subs {
+  color: rgb(96, 96, 96);
+  font-family: roboto;
+  font-size: 7px;
+}
